@@ -3,6 +3,7 @@
     padding: 0;
     line-height: 1.5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 .heading-1 {
@@ -20,10 +21,16 @@ color: sienna;
 }
 
 .container {
+    /*display: flex;
+    flex-direction: row;*/
     display: block;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.article-1 {
+.article-1,
+.article-2,
+.article-3 {
     background-color: rgba(40, 106, 255, 0.4);
     font-weight: 500;
     font-size: 16px;
@@ -31,7 +38,7 @@ color: sienna;
     padding: 28px;
 }
 
-.article-2 {
+/*.article-2 {
     background-color: rgba(40, 106, 255, 0.4);
     font-weight: 500;
     font-size: 16px;
@@ -45,11 +52,12 @@ color: sienna;
     font-size: 16px;
     margin: 20px;
     padding: 30px;
-}
+}*/
 
 h2 {
     transition: all 2s;
     transition-timing-function: ease-in-out;
+   /* transition-duration: 1s;*/
 }
 h2:hover {
     color: palegoldenrod;
